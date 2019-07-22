@@ -1,7 +1,7 @@
 <template>
-  <v-app light>
+  <v-app :dark="darkTheme">
 
-    <SpeedDial/>
+    <SpeedDial @invertTheme="darkTheme = !darkTheme"/>
 
     <v-content>
       <router-view/>
@@ -17,6 +17,11 @@
     name: 'App',
     components: {
       SpeedDial
+    },
+    data () {
+      return {
+        darkTheme: true
+      }
     }
   }
 </script>

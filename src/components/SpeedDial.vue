@@ -2,20 +2,19 @@
     <div id="speed-dial">
         <v-speed-dial bottom right v-model="fab">
             <template v-slot:activator>
-                <v-btn v-model="fab" color="blue darken-2" dark fab>
-                    <v-icon>account_circle</v-icon>
+                <v-btn v-model="fab" fab>
+                    <v-icon>more_vert</v-icon>
                     <v-icon>close</v-icon>
                 </v-btn>
             </template>
-            <v-btn fab dark small color="green">
-                <v-icon>edit</v-icon>
-            </v-btn>
-            <v-btn fab dark small color="indigo">
-                <v-icon>add</v-icon>
-            </v-btn>
-            <v-btn fab dark small color="red">
-                <v-icon>delete</v-icon>
-            </v-btn>
+            <v-tooltip left>
+                <template v-slot:activator="{ on }">
+                    <v-btn fab small v-on="on" @click="invertTheme">
+                        <v-icon>invert_colors</v-icon>
+                    </v-btn>
+                </template>
+                <span>{{invertThemeTooltipText}}</span>
+            </v-tooltip>
         </v-speed-dial>
     </div>
 </template>
@@ -25,7 +24,20 @@
         name: "SpeedDial",
         data () {
             return {
-                fab: false
+                fab: false,
+                darkTheme: true,
+                invertThemeTooltipText: 'Light Theme'
+            }
+        },
+        methods: {
+            invertTheme () {
+                this.$emit('invertTheme');
+                this.darkTheme = !this.darkTheme;
+            }
+        },
+        watch: {
+            darkTheme () {
+                this.darkTheme ? this.invertThemeTooltipText = 'Light Theme' : this.invertThemeTooltipText = 'Dark Theme'
             }
         }
     }
