@@ -17,7 +17,7 @@
           </v-toolbar>
 
           <v-card-text>
-            <p class="body-2 mt-2 mb-0">
+            <p class="body-2 mt-1 mb-0">
               Jump to ...
             </p>
             <ul class="mt-0">
@@ -44,23 +44,16 @@
               </li>
             </ul>
 
-            <h3 class="display-1 mt-4" id="name-summary">
+            <h3 class="display-1 mt-5 mb-4" id="name-summary">
               Summary
             </h3>
             <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
+              This dataset contains nearly 10.000 stereo images.
+              These images are synthesized using <a href="https://blender.org/" target="_blank">Blender</a>&reg; open-source 3D computer graphics software.
+              Each image have a <code>512x512</code> resolution.
             </p>
 
-            <h3 class="display-1 mt-4" id="name-sample">
+            <h3 class="display-1 mt-5 mb-4" id="name-sample">
               Sample Set
             </h3>
             <p class="body-2">
