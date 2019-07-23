@@ -36,7 +36,7 @@
             return {
                 fab: false,
                 darkTheme: true,
-                showToTopBtn: true,
+                showToTopBtn: false,
                 invertThemeTooltipText: 'Light Theme'
             }
         },
