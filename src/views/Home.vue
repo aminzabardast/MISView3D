@@ -56,20 +56,59 @@
             <h3 class="display-1 mt-5 mb-4" id="name-sample">
               Sample Set
             </h3>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
+            <v-layout wrap class="hidden-sm-and-down">
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/1.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/2.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/3.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/4.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/5.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/6.png"></v-img>
+              </v-flex>
+            </v-layout>
+            <v-layout wrap class="hidden-md-and-up">
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/1.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/4.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/2.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/5.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/3.png"></v-img>
+              </v-flex>
+              <v-flex xs12 sm6 md4>
+                <v-img src="sample_images/6.png"></v-img>
+              </v-flex>
+            </v-layout>
+            <ul class="mt-4">
+              <li>
+                X Samples
+              </li>
+              <li>
+                Included RGB images in PNG format, and disparity maps in PFM format.
+              </li>
+              <li>
+                xxx Megabytes
+              </li>
+            </ul>
 
-            <h3 class="display-1 mt-4" id="name-partial-downloads">
+            <h3 class="display-1 mt-5 mb-4" id="name-partial-downloads">
               Partial Downloads
             </h3>
             <p class="body-2">
@@ -85,7 +124,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
 
-            <h3 class="display-1 mt-4" id="name-complete-download">
+            <h3 class="display-1 mt-5 mb-4" id="name-complete-download">
               Complete Download
             </h3>
             <p class="body-2">
@@ -101,7 +140,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
 
-            <h3 class="display-1 mt-4" id="name-format">
+            <h3 class="display-1 mt-5 mb-4" id="name-format">
               Data Format And Structure
             </h3>
             <p class="body-2">
@@ -117,7 +156,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
 
-            <h3 class="display-1 mt-4" id="name-change-log">
+            <h3 class="display-1 mt-5 mb-4" id="name-change-log">
               Change Log
             </h3>
             <p class="body-2">
@@ -133,7 +172,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
 
-            <h3 class="display-1 mt-4" id="name-contact">
+            <h3 class="display-1 mt-5 mb-4" id="name-contact">
               Contact Information
             </h3>
             <p class="body-2">
