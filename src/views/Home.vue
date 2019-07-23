@@ -17,6 +17,36 @@
           </v-toolbar>
 
           <v-card-text>
+            <p class="body-2 mt-2 mb-0">
+              Jump to ...
+            </p>
+            <ul class="mt-0">
+              <li>
+                <a @click="goTo('summary')">Summary</a>
+              </li>
+              <li>
+                <a @click="goTo('sample')">Sample Set</a>
+              </li>
+              <li>
+                <a @click="goTo('partial-downloads')">Partial Downloads</a>
+              </li>
+              <li>
+                <a @click="goTo('complete-download')">Complete Downloads</a>
+              </li>
+              <li>
+                <a @click="goTo('format')">Data Format And Structure</a>
+              </li>
+              <li>
+                <a @click="goTo('change-log')">Go To Change Logs</a>
+              </li>
+              <li>
+                <a @click="goTo('contact')">Contact Information</a>
+              </li>
+            </ul>
+
+            <h3 class="display-1 mt-4" id="name-summary">
+              Summary
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -29,6 +59,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-sample">
+              Sample Set
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -41,6 +75,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-partial-downloads">
+              Partial Downloads
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -53,6 +91,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-complete-download">
+              Complete Download
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -65,6 +107,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-format">
+              Data Format And Structure
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -77,6 +123,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-change-log">
+              Change Log
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -89,6 +139,10 @@
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
+
+            <h3 class="display-1 mt-4" id="name-contact">
+              Contact Information
+            </h3>
             <p class="body-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
             </p>
@@ -116,8 +170,20 @@
 </template>
 
 <script>
+  import * as $ from 'jquery'
+
   export default {
     components: {
+    },
+    methods: {
+      goTo (section) {
+        $("html, body").animate({
+          scrollTop: $(`#name-${section}`).offset().top
+        }, "fast");
+      }
     }
   }
 </script>
+
+<style scoped>
+</style>
