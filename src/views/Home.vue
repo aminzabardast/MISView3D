@@ -37,7 +37,7 @@
                 <a @click="goTo('format')">Data Format And Structure</a>
               </li>
               <li>
-                <a @click="goTo('change-log')">Go To Change Logs</a>
+                <a @click="goTo('change-log')">Change Logs</a>
               </li>
               <li>
                 <a @click="goTo('contact')">Contact Information</a>
