@@ -20,7 +20,7 @@
     },
     data () {
       return {
-        darkTheme: true
+        darkTheme: false
       }
     }
   }
