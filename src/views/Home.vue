@@ -8,12 +8,6 @@
             <v-toolbar-title class="hidden-sm-and-down">Minimally Invasive Surgery View 3D Dataset</v-toolbar-title>
             <v-toolbar-title class="hidden-md-and-up">MISView3D Dataset</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-tooltip bottom>
-              <v-btn icon large target="_blank" slot="activator">
-                <v-icon large>dashboard</v-icon>
-              </v-btn>
-              <span>Hint</span>
-            </v-tooltip>
           </v-toolbar>
 
           <v-card-text>
@@ -37,9 +31,6 @@
                 <a @click="goTo('complete-download')">Complete Downloads</a>
               </li>
               <li>
-                <a @click="goTo('change-log')">Change Logs</a>
-              </li>
-              <li>
                 <a @click="goTo('contact')">Contact Information</a>
               </li>
             </ul>
@@ -56,18 +47,7 @@
             <h3 class="display-1 mt-5 mb-4" id="name-format">
               Data Format And Structure
             </h3>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
+            Python users can use <a href="https://gist.github.com/aminzabardast/4e4e7414c462676b522c35834851da60" target="_blank">This IO library</a> to read and write PNG, and PFM files.
 
             <h3 class="display-1 mt-5 mb-4" id="name-sample">
               Sample Set
@@ -123,9 +103,9 @@
                 xxx Megabytes
               </li>
             </ul>
-            <v-btn block>
+            <v-btn block @click="openInNewTab(sampleDownload.url)">
               <v-icon left>cloud_download</v-icon>
-              Download Sample File (<span class="file_name">.tar.gz</span>)
+              Download Sample File ( {{sampleDownload.size}} <span class="file_name">.tar.gz </span> )
             </v-btn>
 
             <h3 class="display-1 mt-5 mb-4" id="name-partial-downloads">
@@ -159,57 +139,18 @@
             <h3 class="display-1 mt-5 mb-4" id="name-complete-download">
               Complete Download
             </h3>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-
-            <h3 class="display-1 mt-5 mb-4" id="name-change-log">
-              Change Log
-            </h3>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
+            <v-btn block @click="openInNewTab(completeDownload.url)">
+              <v-icon left>cloud_download</v-icon>
+              Download Complete dataset ( {{completeDownload.size}} <span class="file_name">.tar.gz </span> )
+            </v-btn>
 
             <h3 class="display-1 mt-5 mb-4" id="name-contact">
               Contact Information
             </h3>
             <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
-            </p>
-            <p class="body-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi cum, deleniti dicta dolor dolore earum eum eveniet excepturi, exercitationem explicabo facilis neque nihil perferendis quisquam quo ratione velit voluptates.
+              For any information regarding the dataset, please contact <a href="emailto:zabardast.amin@metu.edu.tr">zabardast.amin@gmail.com</a>.
             </p>
           </v-card-text>
-
-          <v-card-actions>
-            <v-btn depressed>left</v-btn>
-            <v-spacer></v-spacer>
-            <v-btn depressed>right</v-btn>
-          </v-card-actions>
 
         </v-card>
       </v-flex>
@@ -518,6 +459,14 @@
             ]
           }
         ],
+        completeDownload: {
+          url: 'https://drive.google.com/open?id=1fjxU_HhxOF8f5QoXLxujYKKhc2nKkNWi',
+          size: '13 GB',
+        },
+        sampleDownload: {
+          url: 'https://google.com/',
+          size: 'xxx MB',
+        }
       }
     },
     components: {
@@ -527,6 +476,10 @@
         $("html, body").animate({
           scrollTop: $(`#name-${section}`).offset().top
         }, "fast");
+      },
+      openInNewTab (url) {
+        let win = window.open(url, '_blank');
+        win.focus();
       }
     }
   }
