@@ -94,18 +94,18 @@
             </v-layout>
             <ul class="mt-4">
               <li>
-                X Samples
+                {{sampleDownload.numbers}} Samples
               </li>
               <li>
                 Included RGB images in PNG format, and disparity maps in PFM format.
               </li>
               <li>
-                xxx Megabytes
+                {{sampleDownload.size}}
               </li>
             </ul>
             <v-btn block @click="openInNewTab(sampleDownload.url)">
               <v-icon left>cloud_download</v-icon>
-              Download Sample File ( {{sampleDownload.size}} <span class="file_name">.tar.gz </span> )
+              Download Sample File ( <span class="file_name">.tar.gz </span> )
             </v-btn>
 
             <h3 class="display-1 mt-5 mb-4" id="name-partial-downloads">
@@ -139,9 +139,20 @@
             <h3 class="display-1 mt-5 mb-4" id="name-complete-download">
               Complete Download
             </h3>
+            <ul>
+              <li>
+                {{completeDownload.numbers}} Samples
+              </li>
+              <li>
+                Included RGB images in PNG format, and disparity maps in PFM format.
+              </li>
+              <li>
+                {{completeDownload.size}}
+              </li>
+            </ul>
             <v-btn block @click="openInNewTab(completeDownload.url)">
               <v-icon left>cloud_download</v-icon>
-              Download Complete dataset ( {{completeDownload.size}} <span class="file_name">.tar.gz </span> )
+              Download Complete dataset ( <span class="file_name">.tar.gz </span> )
             </v-btn>
 
             <h3 class="display-1 mt-5 mb-4" id="name-contact">
@@ -462,10 +473,12 @@
         completeDownload: {
           url: 'https://drive.google.com/open?id=1fjxU_HhxOF8f5QoXLxujYKKhc2nKkNWi',
           size: '13 GB',
+          numbers: 9504
         },
         sampleDownload: {
-          url: 'https://google.com/',
-          size: 'xxx MB',
+          url: 'https://drive.google.com/open?id=14k2ZwpgTxlbNG0P6_rjwC6I1rOueWnsC',
+          size: '98 MB',
+          numbers: 72
         }
       }
     },
