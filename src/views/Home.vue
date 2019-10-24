@@ -159,7 +159,7 @@
               Contact Information
             </h3>
             <p class="body-2">
-              For any information regarding the dataset, please contact <a href="emailto:zabardast.amin@metu.edu.tr">zabardast.amin@gmail.com</a>.
+              For any information regarding the dataset, please contact <a href="emailto:zabardast.amin@metu.edu.tr">zabardast.amin@metu.edu.tr</a>.
             </p>
           </v-card-text>
 
